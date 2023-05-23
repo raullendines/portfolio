@@ -6,12 +6,17 @@ export default {
 				{
 					id: 1,
 					bio:
-						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.',
+						'I am a young, responsible individual with the ability to work in a team and a strong motivation to integrate into a work environment where I can contribute my knowledge and education. My main objective is to increase my professional experience in a real-world setting, beyond the academic sphere. I am enthusiastic about putting into practice everything I have learned and continuing to learn from real-life situations in the workplace.',
 				},
 				{
 					id: 2,
 					bio:
-						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?',
+						'Moreover, I possess excellent communication and interpersonal skills, which enable me to effectively collaborate with colleagues and stakeholders from diverse backgrounds. I thrive in collaborative settings, valuing the exchange of ideas and the opportunity to learn from others.',
+				},
+				{
+					id: 3,
+					bio:
+						'In addition to my academic achievements, I actively seek out opportunities for self-improvement and professional growth. I am proactive in staying updated with the latest industry trends, technologies, and best practices. I believe in a lifelong learning approach and strive to continuously enhance my skill set to remain adaptable and relevant in a dynamic work environment.',
 				},
 			],
 		};
@@ -24,7 +29,7 @@ export default {
 		<!-- About profile image -->
 		<div class="w-full sm:w-1/4 mb-7 sm:mb-0">
 			<img
-				src="@/assets/images/profile.jpeg"
+				src="@/assets/images/profile.png"
 				class="rounded-xl w-96"
 				alt=""
 			/>

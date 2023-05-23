@@ -19,6 +19,16 @@ export default {
 					title: 'Institut Broggi',
 					img: require('@/assets/images/brands/broggi_color.png'),
 				},
+				{
+					id: 3,
+					title: "Centre d'Estudis Politecnics",
+					img: require('@/assets/images/brands/cep_color.png'),
+				},
+				{
+					id: 4,
+					title: "Casino de Barcelona",
+					img: require('@/assets/images/brands/casino_color.png'),
+				},
 			],
 		};
 	},
