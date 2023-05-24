@@ -311,18 +311,18 @@ const projects = [
 		projectImages: [
 			{
 				id: 1,
-				title: 'Trivia Admin Register',
-				img: require('@/assets/images/eywa_project/register_eywa.png'),
+				title: 'Sign In Form',
+				img: require('@/assets/images/codecrafters_project/register_sc.png'),
 			},
 			{
 				id: 2,
-				title: 'Trivia Admin Questions',
-				img: require('@/assets/images/eywa_project/questions_eywa.png'),
+				title: 'Landing Form',
+				img: require('@/assets/images/codecrafters_project/landing_sc.png'),
 			},
 			{
 				id: 3,
-				title: 'Trivia Admin Users',
-				img: require('@/assets/images/eywa_project/users_eywa.png'),
+				title: 'Users Form',
+				img: require('@/assets/images/codecrafters_project/users_sc.png'),
 			},
 		],
 		projectInfo: {
@@ -398,6 +398,110 @@ const projects = [
 					title: 'Mobile UI',
 					img: require('@/assets/images/eywa_project/menu_eywa.png'),
 				}
+			],
+		},
+	},
+
+	{
+		id: 5,
+		title: '112 Simulator',
+		category: 'Web Application',
+		img: require('@/assets/images/broggi_project/broggi_image.png'),
+		date: 'Feb 12, 2022',
+		projectImages: [
+			{
+				id: 1,
+				title: 'Expedients Projecte Broggi',
+				img: require('@/assets/images/broggi_project/expedients_broggi.png'),
+			},
+			{
+				id: 2,
+				title: 'Trivia Admin Questions',
+				img: require('@/assets/images/broggi_project/admin_broggi.png'),
+			},
+			{
+				id: 3,
+				title: 'Trivia Admin Users',
+				img: require('@/assets/images/broggi_project/formulari_broggi.png'),
+			},
+		],
+		projectInfo: {
+			clientHeading: 'About Client',
+			companyInfos: [
+				{
+					id: 1,
+					title: 'Name',
+					details: "Institut Moisès Broggi",
+				},
+				{
+					id: 2,
+					title: 'Services',
+					details: 'UI/UX Design & Development',
+				},
+				{
+					id: 3,
+					title: 'Website',
+					details: 'https://institutbroggi.org',
+				},
+				{
+					id: 4,
+					title: 'Phone',
+					details: '934 36 89 03',
+				},
+			],
+			objectivesHeading: 'Objective',
+			objectivesDetails: "The goal is to create a simulated training environment that allows students to practice handling emergency calls in a realistic setting, while providing valuable educational and informational content.",
+			technologies: [
+				{
+					title: 'Tools & Technologies',
+					techs: ['VueJS', 'HTML', 'CSS', 'Javascript', 'Laravel', 'Eloquent', 'MySql'],
+				},
+			],
+			projectDetailsHeading: 'Challenge',
+			projectDetails: [
+				{
+					"id": 1,
+					"details": "The challenge 'Presentació de Politècnics Launcher' is to create a training simulator for students in the Emergency Healthcare Technician program at the INS Moisès Broggi Institute. The simulator aims to manage emergency calls received at the 112 emergency phone line."
+				},
+				{
+					"id": 2,
+					"details": "Call Cards: The application should store information about the received calls and associate them with case files. It should display the time from call opening to dispatch, call and case codes, and caller identification details."
+				},
+				{
+					"id": 3,
+					"details": "Emergency Location: The application should allow the selection and input of the location type (streets, singular point, road, population entity, province) and provide fields for specific location details based on the type selected."
+				},
+				{
+					"id": 4,
+					"details": "Incident Typing: The application should allow the selection of incident types and specific incidents based on the information provided by the caller."
+				},
+				{
+					"id": 5,
+					"details": "Case Management: The application should enable supervisors to modify case data, including dispatch to intervention services, and display the status of each dispatch."
+				},
+				{
+					"id": 6,
+					"details": "Interactive and Contextual Help: The application should include an interactive video to assist operators during the call process. It should also incorporate Big Data (graphics) to present data from the database and provide a geographic information viewer."
+				},
+				{
+					"id": 7,
+					"details": "The challenge includes specific objectives and limitations for each task, such as capturing call details, managing case information, and providing interactive training support."
+				}
+			],
+			socialSharingsHeading: 'Take a look at our code & documentation!',
+			socialSharings: [
+				{
+					id: 1,
+					name: 'Github',
+					icon: 'github',
+					url: 'https://github.com/raullendines/projecteBroggi',
+				},
+				{
+					id: 2,
+					name: 'Canva',
+					icon: 'book-open',
+					url: 'https://www.canva.com/design/DAE-gcsIs2s/E9q5yherFMqWPoLoCm-3LQ/edit?utm_content=DAE-gcsIs2s&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton',
+				},
 			],
 		},
 	},

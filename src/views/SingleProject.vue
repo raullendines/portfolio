@@ -46,7 +46,7 @@ export default {
     <ProjectInfo :projectInfo="project.projectInfo" />
 
     <!-- Project related projects -->
-    <ProjectRelatedProjects :relatedProject="project.relatedProject" />
+    <ProjectRelatedProjects v-if="project.relatedProject" :relatedProject="project.relatedProject"/>
   </div>
 </template>
 

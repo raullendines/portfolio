@@ -12,22 +12,27 @@ export default {
 				{
 					id: 1,
 					title: 'Digalix Solutions',
-					img: require('@/assets/images/brands/digalix_color.png'),
+					img: require('@/assets/images/brands/digalix_grey.png'),
 				},
 				{
 					id: 2,
 					title: 'Institut Broggi',
-					img: require('@/assets/images/brands/broggi_color.png'),
+					img: require('@/assets/images/brands/broggi_grey.png'),
 				},
 				{
 					id: 3,
 					title: "Centre d'Estudis Politecnics",
-					img: require('@/assets/images/brands/cep_color.png'),
+					img: require('@/assets/images/brands/cep_grey.png'),
 				},
 				{
 					id: 4,
 					title: "Casino de Barcelona",
-					img: require('@/assets/images/brands/casino_color.png'),
+					img: require('@/assets/images/brands/casino_grey.png'),
+				},
+				{
+					id: 5,
+					title: "Aigues de Barcelona",
+					img: require('@/assets/images/brands/aigues_grey.png'),
 				},
 			],
 		};
