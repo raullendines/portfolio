@@ -11,8 +11,7 @@ export default {
 			default: () => [
 				'Web Application',
 				'Mobile Application',
-				'Desktop Application',
-				'Mobile & Desktop Application',
+				'Desktop Application'
 			],
 		},
 	},

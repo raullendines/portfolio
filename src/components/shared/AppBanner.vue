@@ -60,13 +60,7 @@ export default {
 		<!-- Banner right illustration -->
 		<div class="w-full md:w-2/3 text-right float-right">
 			<img
-				v-if="theme === 'light'"
 				src="@/assets/images/developer.svg"
-				alt="Developer"
-			/>
-			<img
-				v-else
-				src="@/assets/images/developer-dark.svg"
 				alt="Developer"
 			/>
 		</div>
