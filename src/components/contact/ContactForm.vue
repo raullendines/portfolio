@@ -1,8 +1,21 @@
+
 <script>
-import Button from '../reusable/Button.vue';
-import FormInput from '../reusable/FormInput.vue';
-import FormTextarea from '../reusable/FormTextarea.vue';
-export default { components: { Button, FormInput, FormTextarea } };
+import emailjs from 'emailjs-com';
+
+export default { 
+	methods: {
+    sendEmail() {
+      emailjs.sendForm('service_k7sq21k', 'template_1jraudt', this.$refs.form)
+        .then((result) => {
+            console.log('SUCCESS!', result.text);
+        }, (error) => {
+            console.log('FAILED...', error.text);
+        });
+    }
+  }
+
+};
+
 </script>
 
 <template>
@@ -15,7 +28,7 @@ export default { components: { Button, FormInput, FormTextarea } };
 			>
 				Contact Form
 			</p>
-			<form action="#" class="font-general-regular space-y-7">
+			<form action="#" class="font-general-regular space-y-7"  @submit.prevent="sendEmail">
 				<FormInput label="Full Name" inputIdentifier="name" />
 				<FormInput
 					label="Email"

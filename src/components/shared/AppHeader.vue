@@ -1,6 +1,5 @@
 <script>
 import ThemeSwitcher from '../ThemeSwitcher';
-import HireMeModal from '../HireMeModal.vue';
 import feather from 'feather-icons';
 import AppHeaderLinks from './AppHeaderLinks.vue';
 import Button from '../reusable/Button.vue';
@@ -8,37 +7,12 @@ import Button from '../reusable/Button.vue';
 export default {
 	components: {
 		ThemeSwitcher,
-		HireMeModal,
 		AppHeaderLinks,
 		Button,
 	},
 	data() {
 		return {
-			isOpen: false,
 			theme: '',
-			modal: false,
-			categories: [
-				{
-					id: 1,
-					value: 'web',
-					name: 'Web Application',
-				},
-				{
-					id: 2,
-					value: 'mobile',
-					name: 'Mobile Application',
-				},
-				{
-					id: 3,
-					value: 'ui-ux',
-					name: 'UI/UX Design',
-				},
-				{
-					id: 4,
-					value: 'branding',
-					name: 'Branding & Anim',
-				},
-			],
 		};
 	},
 
@@ -50,22 +24,11 @@ export default {
 		this.theme = localStorage.getItem('theme') || 'light';
 	},
 	methods: {
+		redirectToGmail() {
+		window.open('https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSDXXwDkRNJgwBXtPqxncvZktFfmlwhgPMKjpfMpqzlXFJqDHfVbxNcvgZNfjDfTTtStsrxL', '_blank');
+		},
 		updateTheme(theme) {
 			this.theme = theme;
-		},
-		showModal() {
-			if (this.modal) {
-				// Stop screen scrolling
-				document
-					.getElementsByTagName('html')[0]
-					.classList.remove('overflow-y-hidden');
-				this.modal = false;
-			} else {
-				document
-					.getElementsByTagName('html')[0]
-					.classList.add('overflow-y-hidden');
-				this.modal = true;
-			}
 		},
 	},
 	updated() {
@@ -146,10 +109,11 @@ export default {
 				<!-- Hire me button -->
 				<div class="hidden md:block">
 					<Button
-						title="Hire Me"
-						class="text-md font-general-medium bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-md px-5 py-2.5 duration-300"
-						@click="showModal()"
-						aria-label="Hire Me Button"
+					title="Send Message"
+					class="px-4 py-2.5 text-white tracking-wider bg-indigo-500 hover:bg-indigo-600 focus:ring-1 focus:ring-indigo-900 rounded-lg duration-500"
+					type="button"
+					aria-label="Send Message"
+					@click="redirectToGmail"
 					/>
 				</div>
 
@@ -161,14 +125,6 @@ export default {
 				/>
 			</div>
 		</div>
-
-		<!-- Hire me modal -->
-		<HireMeModal
-			:showModal="showModal"
-			:modal="modal"
-			:categories="categories"
-			aria-modal="Hire Me Modal"
-		/>
 	</nav>
 </template>
 
